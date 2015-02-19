@@ -195,7 +195,7 @@
     ctrl.$filter = $filter;
 
     ctrl.isEmpty = function() {
-      return angular.isUndefined(ctrl.selected) || ctrl.selected === null || ctrl.selected === '';
+      return angular.isUndefined(ctrl.selected) || ctrl.selected === null || ctrl.selected === '' || ctrl.selected === 0;
     };
 
     var _searchInput = $element.querySelectorAll('input.ui-select-search');
